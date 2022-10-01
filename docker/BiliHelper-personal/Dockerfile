@@ -47,7 +47,7 @@ RUN set -x; \
 
 RUN apk add --no-cache git && \
     git clone ${REPO_URL}/lkeme/BiliHelper-personal.git --depth=1 /app && \
-    cp -f /app/docker/BiliHelper-personal/entrypoint.sh /usr/local/bin/entrypoint.sh && \
+    cp -f /app/docker/entrypoint.sh /usr/local/bin/entrypoint.sh && \
     chmod 777 /usr/local/bin/entrypoint.sh && \
     php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');" && \
     php composer-setup.php && \
