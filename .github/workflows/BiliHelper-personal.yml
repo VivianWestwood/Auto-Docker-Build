@@ -6,7 +6,8 @@ on:
         description: 'docker镜像tag:(多个tag用英文逗号分隔.[如:latest,2.0.0.1])'
         required: true
         default: 'latest'
-
+  schedule:
+    - cron: 0 0 1 * *
 jobs:
   build:
     runs-on: ubuntu-latest
