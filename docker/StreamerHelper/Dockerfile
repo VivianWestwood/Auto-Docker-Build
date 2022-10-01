@@ -1,7 +1,7 @@
 FROM node:alpine
 WORKDIR /app
 # copy project file
-COPY package.json .
+COPY /docker/StreamerHelper/package.json .
 # install ffmpeg
 RUN apk update && \
     apk add yasm && \

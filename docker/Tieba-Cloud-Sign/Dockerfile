@@ -34,6 +34,6 @@ RUN apk add --no-cache \
     && git clone --depth=1 -b master https://github.com/MoeNetwork/Tieba-Cloud-Sign $WORKDIR \
     && mkdir /etc/cont-init.d \
     && mkdir /etc/services.d \
-    && cp -r /var/www/docker/s6-overlay/etc/* /etc/
+    && cp -r /var/www/docker/Tieba-Cloud-Sign/s6-overlay/etc/* /etc/
 
 ENTRYPOINT ["/init"]
