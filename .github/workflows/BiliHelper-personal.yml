@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build BiliHelper-personal Docker Image Build Stable Github
+    name: BiliHelper-personal
     steps:
       - name: Checkout master
         uses: actions/checkout@master
